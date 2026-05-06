@@ -24,6 +24,7 @@ type PublicProfile = Omit<User, "passwordHash">;
 
 // Slice for a simple update request
 type UserUpdate = Pick<User, "name" | "email">;
+
 ```
 
 ## Conclusion
