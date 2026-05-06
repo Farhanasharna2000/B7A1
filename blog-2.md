@@ -6,12 +6,12 @@ One of the most important principles in software engineering is **DRY (Don't Rep
 
 ## Creating Specialized "Slices"
 
-Instead of redefining interfaces for every use case, which creates a maintenance nightmare, you can create specialized "slices" of a master interface[cite: 1].
+Instead of redefining interfaces for every use case, which creates a maintenance nightmare, you can create specialized "slices" of a master interface.
 
-- **`Pick<T, K>`**: This utility allows you to construct a type by picking a specific set of properties `K` from a master interface `T`[cite: 1].
-- **`Omit<T, K>`**: This utility constructs a type by picking all properties from `T` and then removing a specific set `K`[cite: 1].
+- **`Pick<T, K>`**: This utility allows you to construct a type by picking a specific set of properties `K` from a master interface `T`.
+- **`Omit<T, K>`**: This utility constructs a type by picking all properties from `T` and then removing a specific set `K`.
 
-```typescript
+```example
 interface User {
   id: string;
   name: string;
@@ -28,4 +28,4 @@ type UserUpdate = Pick<User, "name" | "email">;
 
 ## Conclusion
 
-Using Pick and Omit ensures you have a single source of truth[cite: 1]. When the master interface changes, your derived types update automatically, keeping your code clean and highly maintainable.
+Using Pick and Omit ensures you have a single source of truth. When the master interface changes, your derived types update automatically, keeping your code clean and highly maintainable.

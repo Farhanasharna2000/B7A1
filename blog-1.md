@@ -10,7 +10,7 @@ When you label a variable as `any`, you are effectively telling the TypeScript c
 
 ## The `unknown` Alternative and Type Narrowing
 
-The `unknown` type is the type-safe sibling of `any`. While you can assign any value to it, TypeScript prevents you from using it until you prove what that data is—a process called **Type Narrowing**.
+The `unknown` type is the type-safe sibling of `any`. While you can assign any value to it, TypeScript prevents you from using it until you prove what that data is a process called **Type Narrowing**.
 
 ```example
 function handleInput(data: unknown) {
