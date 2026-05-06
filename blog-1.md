@@ -18,6 +18,8 @@ function handleInput(data: unknown) {
     console.log(data.trim()); 
   }
 }
+
 ```
+
 ## Conclusion
 By using unknown, you ensure that your application handles unpredictable data, such as API responses or user input, with caution. It forces developers to write defensive code, drastically reducing "undefined is not a function" errors in production.
